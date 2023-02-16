@@ -1,0 +1,119 @@
+/* Set background image based on screen size*/
+@media screen and (max-width: 480px) {
+    body {
+        background-image: url("images/bg-mobile.svg");
+        text-align: center;
+        padding: 2em 2.25em 1.5em 2.25em;
+    }
+
+    .main-flex-item {
+        flex: 50%;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    #logo {
+        max-width: 8em;
+    }
+}
+
+@media screen and (min-width: 481px) {
+    body {
+        background-image: url("images/bg-desktop.svg");
+        padding: 0 5em 1.5em 5em;
+    }
+
+    section.main-flex-item {
+        padding-left: 4em;
+    }
+
+    section.main-flex-item p {
+        font-size: 0.87em;
+    }
+
+    img.main-flex-item {
+        padding-right: 0.5em;
+        width: 57%;
+        position: relative;
+        top: 3em;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    #logo {
+        max-width: 11.5em;
+    }
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(257, 40%, 49%);
+    background-repeat: no-repeat;
+    background-size: contain;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: white;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    align-self: flex-start;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    margin: 0;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 2em 0;
+    min-height: 60vh;
+    min-width: 80vw;
+}
+
+img.main-flex-item {
+    padding-right: 0.5em;
+    width: 57%;
+    position: relative;
+}
+
+section.main-flex-item {
+    width: 43%;
+}
+
+.register-button {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    background-color: white;
+    border: white;
+    padding: 0.75em 4em;
+    border-radius: 1.7em;
+    color: hsl(257, 40%, 49%);
+    margin-top: 0.75em;
+}
+
+.register-button:hover {
+    background-color: hsl(300, 69%, 71%);
+    color: white;
+}
+
+footer {
+    align-self: flex-end;
+}
