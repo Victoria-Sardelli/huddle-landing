@@ -1,51 +1,7 @@
 /* Set background image based on screen size*/
-@media screen and (max-width: 480px) {
-    body {
-        background-image: url("images/bg-mobile.svg");
-        text-align: center;
-        padding: 2em 2.25em 1.5em 2.25em;
-    }
-
+@media screen and (max-width: 1024px) {
     .main-flex-item {
-        flex: 50%;
-    }
-
-    h1 {
-        font-size: 1.5em;
-    }
-
-    #logo {
-        max-width: 8em;
-    }
-}
-
-@media screen and (min-width: 481px) {
-    body {
-        background-image: url("images/bg-desktop.svg");
-        padding: 0 5em 1.5em 5em;
-    }
-
-    section.main-flex-item {
-        padding-left: 4em;
-    }
-
-    section.main-flex-item p {
-        font-size: 0.87em;
-    }
-
-    img.main-flex-item {
-        padding-right: 0.5em;
-        width: 57%;
-        position: relative;
-        top: 3em;
-    }
-
-    h1 {
-        font-size: 2em;
-    }
-
-    #logo {
-        max-width: 11.5em;
+        flex: 100%;
     }
 }
 
@@ -54,6 +10,9 @@
 }
 
 body {
+    background-image: url("images/bg-mobile.svg");
+    text-align: center;
+    padding: 1em 2.5em 0 2.5em;
     background-color: hsl(257, 40%, 49%);
     background-repeat: no-repeat;
     background-size: contain;
@@ -70,10 +29,17 @@ body {
 
 header {
     align-self: flex-start;
+    flex: 1;
+    display: flex;
+}
+
+#logo {
+    max-width: 8em;
 }
 
 h1 {
     font-family: 'Poppins', sans-serif;
+    font-size: 1.5em;
     font-weight: 600;
     margin: 0;
 }
@@ -83,19 +49,19 @@ main {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    margin: 2em 0;
+    flex: 2;
     min-height: 60vh;
     min-width: 80vw;
 }
 
-img.main-flex-item {
-    padding-right: 0.5em;
-    width: 57%;
-    position: relative;
+.main-flex-item {
+    flex: 100%;
 }
 
-section.main-flex-item {
-    width: 43%;
+img.main-flex-item {
+    padding-right: 0.5em;
+    width: 50%;
+    position: relative;
 }
 
 .register-button {
@@ -103,9 +69,9 @@ section.main-flex-item {
     font-weight: 400;
     background-color: white;
     border: white;
-    padding: 0.75em 4em;
     border-radius: 1.7em;
     color: hsl(257, 40%, 49%);
+    padding: 0.75em 5em;
     margin-top: 0.75em;
 }
 
@@ -115,5 +81,72 @@ section.main-flex-item {
 }
 
 footer {
-    align-self: flex-end;
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+#icons * {
+    padding: 0.5em;
+    border: 0.1em solid white;
+    border-radius: 50%;
+    font-size: 1em;
+    min-width: 1em;
+    min-height: 1em;
+    contain: strict;
+    text-align: center;
+    box-sizing: content-box;
+    margin: 0.2em;
+}
+
+@media screen and (min-width: 1025px) {
+    body {
+        background-image: url("images/bg-desktop.svg");
+        padding: 0 5em 1.5em 5em;
+        text-align: left;
+    }
+
+    header {
+        align-items: flex-end;
+    }
+
+    #logo {
+        max-width: 13em;
+    }
+
+    h1 {
+        font-size: 2.5em;
+        padding-right: 2em;
+    }
+
+    .main-flex-item {
+        flex: 50%;
+    }
+
+    img.main-flex-item {
+        padding-right: 0.5em;
+        position: relative;
+        top: 3em;
+    }
+
+    section.main-flex-item {
+        padding-left: 4em;
+        position: relative;
+        top: -0.8em;
+    }
+
+    section.main-flex-item p {
+        font-size: 1.1em;
+        padding-right: 3em;
+        margin: 0.5em;
+    }
+
+    .register-button {
+        padding: 0.75em 4em;
+    }
+
+    footer {
+        align-self: flex-end;
+        padding-right: 4em;
+    }
 }
