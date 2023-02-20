@@ -112,34 +112,40 @@ footer * {
     }
 
     h1 {
-        font-size: 2.5em;
+        font-size: 2.4em;
         padding-right: 2em;
     }
 
+    main {
+        flex: 1;
+    }
+
     .main-flex-item {
-        flex: 50%;
+        flex: 1;
     }
 
     img.main-flex-item {
         padding-right: 0.5em;
         position: relative;
-        top: 3em;
+        width: 100%;
+        top: 3.4em;
     }
 
     section.main-flex-item {
         padding-left: 4em;
-        position: relative;
-        top: -0.8em;
     }
 
     section.main-flex-item p {
         font-size: 1.1em;
-        padding-right: 3em;
-        margin: 0.5em;
+        margin: 0.5em 0;
+        padding: 1em 0;
     }
 
     .register-button {
-        padding: 0.75em 4em;
+        padding: 0.8em 3.5em;
+        font-size: 1.1em;
+        border-radius: 2.5em;
+        margin-top: 0.15em;
     }
 
     footer {
