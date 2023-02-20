@@ -92,10 +92,8 @@ footer {
     margin: 0.2em;
 }
 
-@media screen and (max-width: 1024px) {
-    .main-flex-item {
-        flex: 100%;
-    }
+.main-flex-item {
+    flex: 100%;
 }
 
 @media screen and (min-width: 1025px) {
