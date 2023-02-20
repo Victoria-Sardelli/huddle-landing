@@ -83,13 +83,13 @@ footer * {
     padding: 0.5em;
     border: 0.1em solid white;
     border-radius: 50%;
-    font-size: 1em;
+    font-size: 0.75em;
     min-width: 1em;
     min-height: 1em;
     contain: strict;
     text-align: center;
     box-sizing: content-box;
-    margin: 0.2em;
+    margin: 0.35em;
 }
 
 .main-flex-item {
@@ -125,30 +125,40 @@ footer * {
     }
 
     img.main-flex-item {
-        padding-right: 0.5em;
         position: relative;
         width: 100%;
-        top: 3.4em;
+        top: 3.8em;
+        flex: 57%;
+        padding-right: 1em;
     }
 
     section.main-flex-item {
-        padding-left: 4em;
+        padding-left: 2em;
+        flex: 43%;
+        position: relative;
+        top: 0.15em;
     }
 
     section.main-flex-item p {
-        font-size: 1.1em;
+        font-size: 1.125em;
         margin: 0.5em 0;
         padding: 1em 0;
+        line-height: 1.5;
     }
 
     .register-button {
         padding: 0.8em 3.5em;
-        font-size: 1.1em;
+        font-size: 1.125em;
         border-radius: 2.5em;
         margin-top: 0.15em;
     }
 
     footer {
         align-self: flex-end;
+    }
+
+    footer * {
+        font-size: 1em;
+        margin: 0.5em;
     }
 }
